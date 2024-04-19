@@ -16,12 +16,10 @@
 				"PUT",
 				"DELETE"
 			]
-		}
-	],
-	"rewrites": [
+		},
 		{
-			"source": "/admin",
-			"destination": "/api/admin"
+			"src": "/admin",
+			"dest": "/"
 		}
 	]
 }
