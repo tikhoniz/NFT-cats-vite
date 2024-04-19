@@ -32,6 +32,12 @@ function App() {
     } catch (error) {}
   }, [img])
 
+  const getImage = (evt: any) => {
+    if (!evt.target || !evt.target.files) return
+
+    setImg(evt.target.files[0])
+  }
+
   return (
     <>
       <img
@@ -46,7 +52,7 @@ function App() {
       ))}
       <img src={import.meta.env.VITE_API_URL + nft} alt="nft" />
 
-      <input type="file" onChange={(evt) => setImg(evt.target.files[0])} />
+      <input type="file" onChange={getImage} />
       <button onClick={sendFile}>Загрузить NFT</button>
     </>
   )
