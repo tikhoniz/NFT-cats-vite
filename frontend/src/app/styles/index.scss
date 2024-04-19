@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'fonts/fonts';
+@import 'variables/global';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100svh;
+  // background-color: #000605;
+  @include medium-text;
+  font-weight: 500;
+}
+
+#root {
+  height: 100svh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.loss {
+  background-image: url('../../shared/assets/images/background-red-image.png');
+}

@@ -1,0 +1,26 @@
+.Loader {
+  width: 100%;
+  height: 100%;
+}
+
+.simple_ap__ring {
+  stroke: hsla(223, 10%, 90%, 0.1);
+  transition: stroke 0.3s;
+}
+
+.simple_ap__worm1 {
+  animation-name: simple_worm1;
+  animation-duration: 30000s;
+  animation-iteration-count: infinite;
+}
+
+/* Animtions */
+@keyframes simple_worm1 {
+  from {
+    animation-timing-function: linear;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -10000000;
+  }
+}

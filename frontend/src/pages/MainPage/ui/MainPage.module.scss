@@ -1,0 +1,56 @@
+// @import 'src/app/styles/variables/global.scss';
+
+.MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 258px;
+}
+
+.button {
+  width: 100%;
+  min-width: none;
+  margin-top: 110px;
+
+  button {
+    min-height: 48px;
+  }
+}
+
+// @media screen and (min-width: $tablet-width) {
+//   .title {
+//     margin-top: 300px;
+//   }
+
+//   .button {
+//     max-width: 318px;
+//     margin-top: 218px;
+
+//     button {
+//       min-height: 56px;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: $desktop-width) {
+//   .title {
+//     margin-top: 150px;
+
+//     &.big {
+//       h1 {
+//         font-size: 120px;
+//       }
+
+//       p {
+//         font-size: 30px;
+//       }
+//     }
+//   }
+
+//   .button {
+//     margin-top: 127px;
+//   }
+// }

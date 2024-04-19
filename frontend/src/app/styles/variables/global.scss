@@ -1,0 +1,173 @@
+//Font
+$font-family-main: 'Montserrat', sans-serif;
+$font-family-secondary: 'PTRootUI';
+
+// Small -size
+$font-size-s: 12px;
+$font-line-s: 120%;
+
+@mixin small-text {
+  font: {
+    family: $font-family-main;
+    size: $font-size-s;
+  }
+  line-height: $font-line-s;
+}
+
+@mixin small-secondary-text {
+  font: {
+    family: $font-family-secondary;
+    size: $font-size-s;
+  }
+  line-height: $font-line-s;
+}
+
+// Medium -size
+$font-size-m: 14px;
+$font-line-m: 110%;
+
+@mixin medium-text {
+  font: {
+    family: $font-family-main;
+    size: $font-size-m;
+  }
+  line-height: $font-line-m;
+}
+
+@mixin medium-secondary-text {
+  font: {
+    family: $font-family-secondary;
+    size: $font-size-m;
+  }
+  line-height: $font-line-m;
+}
+
+// Large -size
+$font-size-l: 20px;
+$font-line-l: 110%;
+
+@mixin large-text {
+  font: {
+    family: $font-family-main;
+    size: $font-size-l;
+  }
+  line-height: $font-line-l;
+}
+
+@mixin large-secondary-text {
+  font: {
+    family: $font-family-secondary;
+    size: $font-size-l;
+  }
+  line-height: $font-line-l;
+}
+
+// Extra Large -size
+$font-size-xl: 24px;
+$font-line-xl: 120%;
+@mixin extra-large-text {
+  font: {
+    family: $font-family-main;
+    size: $font-size-xl;
+  }
+  line-height: $font-line-xl;
+}
+
+@mixin extra-large-secondary-text {
+  font: {
+    family: $font-family-secondary;
+    size: $font-size-xl;
+  }
+  line-height: $font-line-xl;
+}
+
+// Size screen
+$big-desktop-width: 1920px;
+$desktop-width: 1440px;
+$tablet-width: 768px;
+$phone-width: 360px;
+
+// Colors
+$primary: #00c7b1;
+$dark-primary: #008c7c;
+$white: #ffffff;
+$black: #000000;
+$light-gray: #ffffff66;
+$gray: #868686;
+$purple: #9877e9;
+$violet: #bf6dff;
+
+$red: #ff344c;
+$green: #00c7b1;
+
+// backgrounds
+$background-dark: #111822;
+$background-violet-gradient: linear-gradient(
+    270deg,
+    rgba(180, 0, 145, 0),
+    rgba(180, 0, 145, 0.3) 50.671%,
+    rgba(180, 0, 145, 0) 100%
+  ),
+  linear-gradient(45deg, rgb(117, 59, 189) 0%, rgb(117, 59, 189) 100%);
+
+$background-light-violet-gradient: linear-gradient(
+    165.76deg,
+    rgb(0, 199, 177) -146.577%,
+    rgba(0, 199, 177, 0) 82.126%
+  ),
+  linear-gradient(
+    -35.38deg,
+    rgb(117, 59, 189) -53.891%,
+    rgba(117, 59, 189, 0) 45.246%
+  );
+
+//
+$right-angle: skewX(-15deg);
+$left-angle: skewX(15deg);
+
+// Animation
+$base-transition: all 0.3s ease;
+
+@mixin no-scroll {
+  overflow: hidden;
+}
+
+@mixin border-color {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, $primary, #753bbd) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+@mixin absolute-centered-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin invisibleScroll {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 100%;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: transparent;
+  }
+}
