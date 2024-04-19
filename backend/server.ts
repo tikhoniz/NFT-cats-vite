@@ -6,6 +6,8 @@ dotenv.config()
 
 // routers
 import catRoutes from './routes/catRoutes'
+import upload from './routes/upload'
+import path from 'path'
 
 const app = express()
 
@@ -16,10 +18,11 @@ connectDB()
 
 // cors
 app.use(cors())
-
 app.use(express.json({ limit: '50mb' }))
+app.use('/images', express.static(path.join(__dirname, 'images')))
 
 app.use('/api/cats', catRoutes)
+app.use('/api/upload', upload)
 
 app.listen(PORT, () => {
   console.log(`Server on running on port ${PORT}`)
