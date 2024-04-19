@@ -20,8 +20,8 @@
 	],
 	"rewrites": [
 		{
-			"source": "/(.*)",
-			"destination": "/"
+			"source": "/admin",
+			"destination": "/api/admin"
 		}
 	]
 }
