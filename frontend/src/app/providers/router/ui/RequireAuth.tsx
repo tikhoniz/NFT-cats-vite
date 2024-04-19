@@ -1,6 +1,6 @@
 // import { getAuthInited } from 'features/Auth'
-import { Navigate, useLocation } from 'react-router-dom'
-import { RoutePath } from '../config/routeConfig/routePath'
+// import { Navigate, useLocation } from 'react-router-dom'
+// import { RoutePath } from '../config/routeConfig/routePath'
 // import { RoutePath } from 'shared/config/routeConfig/routePath'
 // import { useAppSelector } from 'shared/lib/hooks/reduxHooks/reduxHooks'
 
