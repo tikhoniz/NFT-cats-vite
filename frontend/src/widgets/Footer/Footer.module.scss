@@ -1,0 +1,12 @@
+@import 'src/app/styles/variables/global.scss';
+
+.Footer {
+  width: 100%;
+  max-width: $big-desktop-width;
+  padding: 20px;
+  background: #dedddd;
+}
+
+.inner {
+  height: 40px;
+}

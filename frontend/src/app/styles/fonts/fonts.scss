@@ -1,56 +1,25 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../shared/assets/fonts/Montserrat-Light.woff2') format('woff2'),
-    url('../../shared/assets/fonts/Montserrat-Light.woff2') format('woff');
+  font-family: 'BaiJamjuree';
+  src: url('../../shared/assets/fonts/BaiJamjuree-Light.woff2') format('woff2'),
+    url('../../shared/assets/fonts/BaiJamjuree-Light.woff2') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../shared/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
-    url('../../shared/assets/fonts/Montserrat-Regular.woff2') format('woff');
+  font-family: 'BaiJamjuree';
+  src: url('../../shared/assets/fonts/BaiJamjuree-Regular.woff2')
+      format('woff2'),
+    url('../../shared/assets/fonts/BaiJamjuree-Regular.woff2') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../shared/assets/fonts/Montserrat-Medium.woff2') format('woff2'),
-    url('../../shared/assets/fonts/Montserrat-Medium.woff2') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../../shared/assets/fonts/Montserrat-ExtraBold.woff2')
+  font-family: 'BaiJamjuree';
+  src: url('../../shared/assets/fonts/BaiJamjuree-SemiBold.woff2')
       format('woff2'),
-    url('../../shared/assets/fonts/Montserrat-ExtraBold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTRootUI';
-  src: url('../../shared/assets/fonts/pt-root-ui_light.woff2') format('woff2'),
-    url('../../shared/assets/fonts/pt-root-ui_light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTRootUI';
-  src: url('../../shared/assets/fonts/pt-root-ui_medium.woff2') format('woff2'),
-    url('../../shared/assets/fonts/pt-root-ui_medium.woff') format('woff');
+    url('../../shared/assets/fonts/BaiJamjuree-SemiBold.woff2') format('woff');
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTRootUI';
-  src: url('../../shared/assets/fonts/pt-root-ui_bold.woff2') format('woff2'),
-    url('../../shared/assets/fonts/pt-root-ui_bold.woff') format('woff');
-  font-weight: 800;
   font-style: normal;
 }

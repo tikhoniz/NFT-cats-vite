@@ -8,7 +8,6 @@ html {
 
 body {
   height: 100svh;
-  // background-color: #000605;
   @include medium-text;
   font-weight: 500;
 }
@@ -28,8 +27,4 @@ img {
   flex-direction: column;
   height: 100%;
   overflow-x: hidden;
-}
-
-.loss {
-  background-image: url('../../shared/assets/images/background-red-image.png');
 }

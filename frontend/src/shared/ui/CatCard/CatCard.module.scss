@@ -1,2 +1,109 @@
+@import 'src/app/styles/variables/global.scss';
+
 .CatCard {
+  position: relative;
+  height: 100%;
+  height: 480px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: absolute;
+  top: 42%;
+  left: 0;
+  width: 50%;
+  padding-left: 5%;
+  color: #fff;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.caption {
+  line-height: 140%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.moreBtn {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+
+  z-index: 10;
+  border: 2px solid $violet;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: $white;
+  transition: $base-transition;
+  -webkit-transition: $base-transition;
+  -moz-transition: $base-transition;
+  -ms-transition: $base-transition;
+  -o-transition: $base-transition;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  &:hover {
+    background-color: $violet;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .content {
+    top: 62%;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .CatCard {
+    transition: $base-transition;
+    -webkit-transition: $base-transition;
+    -moz-transition: $base-transition;
+    -ms-transition: $base-transition;
+    -o-transition: $base-transition;
+
+    img {
+      transition: $base-transition;
+      -webkit-transition: $base-transition;
+      -moz-transition: $base-transition;
+      -ms-transition: $base-transition;
+      -o-transition: $base-transition;
+    }
+
+    &:hover > img {
+      scale: 1.05;
+      transition: $base-transition;
+      -webkit-transition: $base-transition;
+      -moz-transition: $base-transition;
+      -ms-transition: $base-transition;
+      -o-transition: $base-transition;
+      filter: brightness(70%);
+      -webkit-filter: brightness(70%);
+    }
+
+    &:hover > .moreBtn {
+      opacity: 1;
+      transition: $base-transition;
+      -webkit-transition: $base-transition;
+      -moz-transition: $base-transition;
+      -ms-transition: $base-transition;
+      -o-transition: $base-transition;
+    }
+  }
+  .content {
+    top: 62%;
+  }
+
+  .moreBtn {
+    opacity: 0;
+  }
 }

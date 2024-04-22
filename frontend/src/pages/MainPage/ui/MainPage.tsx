@@ -1,8 +1,7 @@
-import { memo, useEffect, useState } from 'react'
+import { memo } from 'react'
 import { classNames } from '../../../shared/lib/classNames/classNames'
-import { CatCard } from '../../../shared/ui/CatCard/CatCard'
 import { Page } from '../../../shared/ui/Page'
-import { Slider } from '../../../widgets/Slider/Slider'
+import { HomeSlider } from '../../../widgets/HomeSlider/HomeSlider'
 import cls from './MainPage.module.scss'
 
 interface MainPageProps {
@@ -10,22 +9,24 @@ interface MainPageProps {
 }
 
 const MainPage = ({ className }: MainPageProps) => {
-  const [cats, setCats] = useState<any[]>([])
-
-  useEffect(() => {
-    fetch(import.meta.env.VITE_API_URL + 'api/cats')
-      .then((res) => {
-        return res.json()
-      })
-      .then((data) => {
-        setCats(data)
-      })
-  }, [])
-  const cards = cats.map((it) => <CatCard key={it._id} cat={it} />)
-
   return (
     <Page className={classNames(cls.MainPage, {}, [className])}>
-      <Slider items={cards} />
+      <section className={cls.hero}>
+        <div className={cls.content}>
+          <h3 className={cls.head}>Our mission</h3>
+          <p className={cls.mission}>
+            Discover a collection of heartwarming NFTs showcasing the resilience
+            of remarkable cats. From overcoming adversity to embracing second
+            chances, each artwork captures the indomitable spirit of these
+            feline companions. By acquiring these NFTs, you not only add
+            captivating art to your collection but also support initiatives to
+            aid animals in need. Join us in celebrating the strength and
+            resilience of these extraordinary beings through digital
+            storytelling
+          </p>
+        </div>
+      </section>
+      <HomeSlider />
     </Page>
   )
 }
