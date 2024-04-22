@@ -32,38 +32,36 @@ export const HomeSlider = memo((props: HomeSliderProps) => {
 
   return (
     <div className={classNames(cls.Slider, {}, [className])}>
-      {cats.length && (
-        <Swiper
-          init={false}
-          speed={2000}
-          loop={true}
-          effect={'coverflow'}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={1}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          parallax={true}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: true,
-          }}
-          pagination={{ clickable: true }}
-          modules={[EffectCoverflow, Pagination, Autoplay, Parallax]}
-          breakpoints={{ 540: { slidesPerView: 'auto' } }}
-        >
-          {cats.map((it) => (
-            <SwiperSlide key={it._id}>
-              <CatCard cat={it} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      )}
+      <Swiper
+        init={false}
+        speed={2000}
+        loop={true}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={1}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        parallax={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: true,
+        }}
+        pagination={{ clickable: true }}
+        modules={[EffectCoverflow, Pagination, Autoplay, Parallax]}
+        breakpoints={{ 760: { slidesPerView: 'auto' } }}
+      >
+        {cats.map((it) => (
+          <SwiperSlide key={it._id}>
+            <CatCard cat={it} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 })

@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { memo, useCallback, useState } from 'react'
 import { classNames } from '../../../shared/lib/classNames/classNames'
-import { Page } from '../../../shared/ui/Page'
 import cls from './AdminPage.module.scss'
 
 interface AdminPageProps {
@@ -33,11 +32,11 @@ const AdminPage = ({ className }: AdminPageProps) => {
     setImg(evt.target.files[0])
   }
   return (
-    <Page className={classNames(cls.MainPage, {}, [className])}>
+    <div className={classNames(cls.MainPage, {}, [className])}>
       <img src={import.meta.env.VITE_API_URL + nft} alt="nft" />
       <input type="file" onChange={getImage} />
       <button onClick={sendFile}>Загрузить NFT</button>
-    </Page>
+    </div>
   )
 }
 export default memo(AdminPage)

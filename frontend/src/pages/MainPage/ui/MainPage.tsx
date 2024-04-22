@@ -1,6 +1,5 @@
 import { memo } from 'react'
 import { classNames } from '../../../shared/lib/classNames/classNames'
-import { Page } from '../../../shared/ui/Page'
 import { HomeSlider } from '../../../widgets/HomeSlider/HomeSlider'
 import cls from './MainPage.module.scss'
 
@@ -10,7 +9,7 @@ interface MainPageProps {
 
 const MainPage = ({ className }: MainPageProps) => {
   return (
-    <Page className={classNames(cls.MainPage, {}, [className])}>
+    <div className={classNames(cls.MainPage, {}, [className])}>
       <section className={cls.hero}>
         <div className={cls.content}>
           <h3 className={cls.head}>Our mission</h3>
@@ -27,7 +26,7 @@ const MainPage = ({ className }: MainPageProps) => {
         </div>
       </section>
       <HomeSlider />
-    </Page>
+    </div>
   )
 }
 export default memo(MainPage)
