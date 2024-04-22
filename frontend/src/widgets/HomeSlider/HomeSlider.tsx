@@ -51,7 +51,7 @@ export const HomeSlider = memo((props: HomeSliderProps) => {
           }}
           parallax={true}
           autoplay={{
-            delay: 1500,
+            delay: 3500,
             disableOnInteraction: true,
           }}
           pagination={{ clickable: true }}

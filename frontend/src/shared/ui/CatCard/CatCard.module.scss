@@ -42,6 +42,7 @@
   border-radius: 5px;
   padding: 10px 20px;
   color: $white;
+  background-color: $violet;
   transition: $base-transition;
   -webkit-transition: $base-transition;
   -moz-transition: $base-transition;
@@ -51,10 +52,6 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-
-  &:hover {
-    background-color: $violet;
-  }
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -105,5 +102,10 @@
 
   .moreBtn {
     opacity: 0;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $violet;
+    }
   }
 }
