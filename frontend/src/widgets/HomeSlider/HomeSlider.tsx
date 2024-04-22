@@ -41,6 +41,7 @@ export const HomeSlider = memo((props: HomeSliderProps) => {
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={1}
+          spaceBetween={50}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,

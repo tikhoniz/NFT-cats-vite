@@ -17,7 +17,16 @@ const PORT = process.env.PORT || 5000
 connectDB()
 
 // cors
-app.use(cors())
+// app.use(cors())
+const options = [
+  cors({
+    origin: '*',
+    methods: '*',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  }),
+]
+app.use(options)
 app.use(express.json({ limit: '50mb' }))
 app.use('/images', express.static(path.join(__dirname, 'images')))
 
