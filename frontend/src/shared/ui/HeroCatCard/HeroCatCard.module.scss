@@ -55,6 +55,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
+  line-height: 1;
 
   .title {
     font-size: 2.25rem;
@@ -90,8 +91,20 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .HeroCatCard {
+    flex-direction: row;
+  }
+
   .imageBlock {
-    max-width: 340px;
+    min-width: 340px;
+  }
+
+  .textBlock {
+    align-items: flex-start;
+
+    .caption {
+      text-align: left;
+    }
   }
 }
 

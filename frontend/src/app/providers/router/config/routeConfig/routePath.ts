@@ -1,6 +1,7 @@
 export enum AppRoutes {
   MAIN = 'main',
   ADMIN = 'admin',
+  CAT = 'cat',
   // ENEMY_FIND = 'enemyFind',
   // BATTLE = 'battle',
   // BATTLE_RESULT = 'battle_result',
@@ -11,6 +12,7 @@ export enum AppRoutes {
 export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: '/',
   [AppRoutes.ADMIN]: '/admin',
+  [AppRoutes.CAT]: '/cat',
   // [AppRoutes.AVATAR_CREATE]: '/character-create',
   // [AppRoutes.ENEMY_FIND]: '/enemy-find',
   // [AppRoutes.BATTLE]: '/battle',

@@ -4,6 +4,7 @@ import { RouteProps } from 'react-router-dom'
 import { AppRoutes, RoutePath } from './routePath'
 import MainPage from '../../../../../pages/MainPage/ui/MainPage'
 import { AdminPage } from '../../../../../pages/AdminPage'
+import { CatPage } from '../../../../../pages/CatPage'
 // import EnemyFindPage from 'pages/EnemyFindPage/ui/EnemyFindPage'
 // import { NotFoundPage } from 'pages/NotFoundPage'
 // import { BattlePage } from 'pages/BattlePage'
@@ -18,6 +19,10 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
   [AppRoutes.MAIN]: {
     path: RoutePath.main,
     element: <MainPage />,
+  },
+  [AppRoutes.CAT]: {
+    path: RoutePath.cat,
+    element: <CatPage />,
   },
   [AppRoutes.ADMIN]: {
     path: RoutePath.admin,

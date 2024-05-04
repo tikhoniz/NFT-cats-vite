@@ -8,7 +8,7 @@ interface HeroCatCardProps {
   cat?: any
 }
 
-export const HeroCatCard = ({ cat, className }: HeroCatCardProps) => {
+export const HeroCatCard = ({ className }: HeroCatCardProps) => {
   const [cats, setCats] = useState<any[]>([])
 
   useEffect(() => {
@@ -20,8 +20,6 @@ export const HeroCatCard = ({ cat, className }: HeroCatCardProps) => {
         setCats(data)
       })
   }, [])
-
-  // console.log(cats[0].name)
 
   return (
     <div
@@ -35,7 +33,7 @@ export const HeroCatCard = ({ cat, className }: HeroCatCardProps) => {
       <div className={cls.imageBlock}>
         {cats[0] && (
           <>
-            <Link to={'/newCat'}>
+            <Link to={'/cat'}>
               <img
                 className={cls.image}
                 loading="lazy"
@@ -56,11 +54,10 @@ export const HeroCatCard = ({ cat, className }: HeroCatCardProps) => {
             <p className={cls.caption}>{cats[0].history}</p>
           </>
         )}
+        <div className={cls.buyBtnBlock}>
+          <button>Buy NOW</button>
+        </div>
       </div>
-      <div className={cls.buyBtnBlock}>
-        <button>Buy NOW</button>
-      </div>
-      {/* <button className={cls.moreBtn}>more</button> */}
     </div>
   )
 }

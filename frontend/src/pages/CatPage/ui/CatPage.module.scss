@@ -1,0 +1,85 @@
+@import 'src/app/styles/variables/global.scss';
+
+.CatPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 258px;
+}
+
+.button {
+  width: 100%;
+  min-width: none;
+  margin-top: 110px;
+
+  button {
+    min-height: 48px;
+  }
+}
+
+.hero {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  .content {
+    max-width: 72rem;
+    color: #9fabb2;
+    text-align: center;
+  }
+}
+
+.head {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #4c545d;
+  margin-bottom: 2rem;
+}
+
+.mission {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+// @media screen and (min-width: $tablet-width) {
+//   .title {
+//     margin-top: 300px;
+//   }
+
+//   .button {
+//     max-width: 318px;
+//     margin-top: 218px;
+
+//     button {
+//       min-height: 56px;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: $desktop-width) {
+//   .title {
+//     margin-top: 150px;
+
+//     &.big {
+//       h1 {
+//         font-size: 120px;
+//       }
+
+//       p {
+//         font-size: 30px;
+//       }
+//     }
+//   }
+
+//   .button {
+//     margin-top: 127px;
+//   }
+// }
