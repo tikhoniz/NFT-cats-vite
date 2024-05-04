@@ -1,5 +1,6 @@
 import { memo } from 'react'
 import { classNames } from '../../../shared/lib/classNames/classNames'
+import { HeroCatCard } from '../../../shared/ui/HeroCatCard/HeroCatCard'
 import { HomeSlider } from '../../../widgets/HomeSlider/HomeSlider'
 import cls from './MainPage.module.scss'
 
@@ -25,7 +26,11 @@ const MainPage = ({ className }: MainPageProps) => {
           </p>
         </div>
       </section>
-      <HomeSlider />
+      <section className="container">
+        <HeroCatCard />
+      </section>
+
+      {/* <HomeSlider /> */}
     </div>
   )
 }

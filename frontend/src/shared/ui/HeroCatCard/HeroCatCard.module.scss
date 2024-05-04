@@ -1,0 +1,101 @@
+@import 'src/app/styles/variables/global.scss';
+
+.HeroCatCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 0 solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+  background-color: rgb(243 244 246 / 1);
+}
+
+.imageBlock {
+  position: relative;
+  min-width: 256px;
+  width: 100%;
+
+  .image {
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+  }
+
+  .price {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    text-align: center;
+    font-size: 18px;
+    padding: 1rem;
+    background-color: $white;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+
+  .title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  .caption {
+    line-height: 140%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+.buyBtnBlock {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  button {
+    color: $white;
+    background-color: #4b5563;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .imageBlock {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .imageBlock {
+    max-width: 256px;
+  }
+}

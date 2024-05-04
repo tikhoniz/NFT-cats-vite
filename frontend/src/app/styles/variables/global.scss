@@ -128,6 +128,15 @@ $left-angle: skewX(15deg);
 // Animation
 $base-transition: all 0.3s ease;
 
+.container {
+  max-width: 1600px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 @mixin no-scroll {
   overflow: hidden;
 }
